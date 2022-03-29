@@ -1,0 +1,71 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    font-weight: 300;
+    color: black;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    background-color: white;
+}
+img {
+	padding-left: 10px;
+	height: 40%;
+	width: 40%;
+	display: inline-block;
+}
+
+h2 {
+	border-bottom:1px solid #CCC;
+    float:left;
+    width:100%;
+    padding-bottom:3px;
+	zoom: 1;
+}
+#photo {
+	
+	
+	
+}
+
+#display {
+	
+	position: relative;
+	
+}
+
+#zoom {
+	position: absolute;
+	border: none;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+/*
+Works cited:
+www.scrimba.com Learn JavaScript Course
+*/
+
+.forward, .back {
+	cursor: pointer;
+	position: absolute;
+	top: 110%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: gray;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.back {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
