@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script  type="text/javascript" src="index.js"></script>
+
+    <script type="text/javascript">
+        let images = [new Image("../images/buildings/WWII_Korea_04.jpg", "", ""), new Image("../images/buildings/WWII_Korea_06.jpg", "", ""), new Image("../images/buildings/WWII_Korea_07.jpg", "", ""), new Image("../images/buildings/WWII_Korea_09.jpg", "", ""), new Image("../images/buildings/WWII_Korea_033.jpg", "", ""), new Image("../images/buildings/WWII_Korea_034.jpg", "", ""), new Image("../images/buildings/WWII_Korea_035.jpg", "", ""), new Image("../images/buildings/WWII_Korea_036.jpg", "", ""), new Image("../images/buildings/WWII_Korea_041.jpg", "", ""), new Image("../images/buildings/WWII_Korea_048.jpg", "", ""), new Image("../images/buildings/WWII_Korea_058.jpg", "", ""),];
+        let index = 0;
+    </script>
+    <title>Power Dynamics in Architecture</title>
+</head>
+<body>
+
+<div id="banner">
+    <h2>Power Dynamics in Architecture</h2>
+</div>
+
+
+<div id="display">
+    <img id="photo" src="../images/buildings/WWII_Korea_04.jpg">
+    <button class="forward" onclick="advanceImage(true)">Back</button>
+    <button class="back" onclick="advanceImage()">Forward</button>
+    <div id="zoom" class="img-zoom"></div>
+</div>
+
+
+
+<footer id="footer">
+
+</footer>
+
+</body>
+</html>

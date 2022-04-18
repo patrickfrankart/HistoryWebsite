@@ -52,11 +52,8 @@ function advanceImage(back){
     photo.caption = replace.caption;
     //magnify("photo", 3);
     var number = document.getElementById('number');
-    number.innerText = '' + index;
+    number.innerText = '' + replace.getUrl();
     console.log(index);
 
     return index;
 }
-
-let images = [new Image("../images/aftermath/WWII_Korea_017.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_021.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_025.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_026.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_040.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_050.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_052.jpg", "", ""), new Image("../images/aftermath/WWII_Korea_057.jpg", "", ""),];
-let index = 0;

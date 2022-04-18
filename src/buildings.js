@@ -52,7 +52,7 @@ function advanceImage(back){
     photo.caption = replace.caption;
     //magnify("photo", 3);
     var number = document.getElementById('number');
-    number.innerText = '' + index;
+    number.innerText = '' + replace.getUrl();
     console.log(index);
 
     return index;

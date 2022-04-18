@@ -52,11 +52,11 @@ function advanceImage(back){
     photo.caption = replace.caption;
     //magnify("photo", 3);
     var number = document.getElementById('number');
-    number.innerText = '' + index;
+    number.innerText = '' + replace.getUrl();
     console.log(index);
 
     return index;
 }
 
-let images = [new Image("../images/WWII_Korea_023A.jpg", "", ""), new Image("../images/WWII_Korea_023B.jpg", "", ""), new Image("../images/WWII_Korea_028A.jpg", "", ""), new Image("../images/WWII_Korea_028B.jpg", "", ""), new Image("../images/WWII_Korea_038A.jpg", "", ""), new Image("../images/WWII_Korea_038B.jpg", "", ""), new Image("../images/WWII_Korea_064.jpg", "", ""), new Image("../images/WWII_Korea_065.jpg", "", ""),  new Image("../images/WWII_Korea_066.jpg", "", "")];
+let images = [ new Image("../images/WWII_Korea_066.jpg", "", "")];
 let index = 0;

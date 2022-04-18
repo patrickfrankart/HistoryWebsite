@@ -7,26 +7,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script  type="text/javascript" src="index.js"></script>
+
+    <script type="text/javascript">
+            let images = [new Image("../images/military/WWII_Korea_020.jpg", "", ""), new Image("../images/military/WWII_Korea_023.jpg", "", ""), new Image("../images/military/WWII_Korea_024.jpg", "", ""), new Image("../images/military/WWII_Korea_027.jpg", "", ""),new Image("../images/military/WWII_Korea_038A.jpg", "", ""),new Image("../images/military/WWII_Korea_038B.jpg", "", ""), new Image("../images/military/WWII_Korea_039.jpg", "", ""), new Image("../images/military/WWII_Korea_040.jpg", "", ""),new Image("../images/military/WWII_Korea_041.jpg", "", ""), new Image("../images/military/WWII_Korea_042.jpg", "", ""), new Image("../images/military/WWII_Korea_044.jpg", "", ""), new Image("../images/military/WWII_Korea_045.jpg", "", ""), new Image("../images/military/WWII_Korea_046.jpg", "", ""), new Image("../images/military/WWII_Korea_047.jpg", "", ""),new Image("../images/military/WWII_Korea_048.jpg", "", ""), new Image("../images/military/WWII_Korea_049.jpg", "", ""), new Image("../images/military/WWII_Korea_054.jpg", "", ""), new Image("../images/military/WWII_Korea_055.jpg", "", ""), new Image("../images/military/WWII_Korea_056.jpg", "", ""), new Image("../images/military/WWII_Korea_059.jpg", "", ""), new Image("../images/military/WWII_Korea_060.jpg", "", ""), new Image("../images/military/WWII_Korea_061.jpg", "", ""), new Image("../images/military/WWII_Korea_062.jpg", "", ""), new Image("../images/military/WWII_Korea_065.jpg", "", ""), ];
+            let index = 0;
+    </script>
+
     <title>US Occupation/Military Presence in Korea</title>
 </head>
 <body>
 
+<div id="banner">
+    <h2>US Occupation/Military Presence in Korea</h2>
+</div>
 
-<h2>US Occupation/Military Presence in Korea</h2>
+
+
 
 <div id="display">
-    <img id="photo" src="../images/military/WWII_Korea_020.jpg" >
-    <div id="zoom" class="img-zoom"></div>
-</div>
-<div id="number"> 1 </div>
-<div class="rows">
+    <img id="photo" src="../images/military/WWII_Korea_020.jpg" />
     <button class="forward" onclick="advanceImage(true)">Back</button>
     <button class="back" onclick="advanceImage()">Forward</button>
+    <div id="zoom" class="img-zoom"></div>
 </div>
 
 
+<!--div id="number"> WWII_Korea_020.jpg </div-->
 
-<script  type="text/javascript" src="military.js"></script>
+
+
+
+
 
 
 <footer id="footer">
