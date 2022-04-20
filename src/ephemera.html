@@ -10,7 +10,7 @@
     <script  type="text/javascript" src="index.js"></script>
 
     <script type="text/javascript">
-        let images = [new Image("../images/ephemera/WWII_Korea_022.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_023A.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_023B.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_024.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_028A.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_028B.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_029.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_030.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_031.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_037.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_050.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_051.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_052.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_053.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_054.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_055.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_056.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_057.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_058.jpg", "", ""),];
+        let images = [new Image("../images/ephemera/WWII_Korea_022.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_023A.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_023B.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_024.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_025.jpg", "", ""),new Image("../images/ephemera/WWII_Korea_026.jpg", "", ""),new Image("../images/ephemera/WWII_Korea_028A.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_028B.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_029.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_030.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_031.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_037.jpg", "", ""),new Image("../images/ephemera/WWII_Korea_049.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_050.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_051.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_052.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_053.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_054.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_055.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_056.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_057.jpg", "", ""), new Image("../images/ephemera/WWII_Korea_058.jpg", "", ""),];
         let index = 0;
     </script>
     <title>Collected Military Ephemera</title>
@@ -23,8 +23,13 @@
 
 <div id="display">
     <img id="photo" src="../images/ephemera/WWII_Korea_021.jpg" >
-    <button class="forward" onclick="advanceImage(true)">Back</button>
-    <button class="back" onclick="advanceImage()">Forward</button>
+    <button class="forward" onclick="advanceImage(true)">
+        <img src="../images/previous.svg">
+    </button>
+    <button class="back" onclick="advanceImage()">
+       <img src="../images/next.svg">
+    </button>
+
     <div id="zoom" class="img-zoom"></div>
 </div>
 
