@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <script  type="text/javascript" src="index.js"></script>
 
-    <script type="text/javascript">
-        let images = [new Image("../images/streetlevel/WWII_Korea_01.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_02.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_03.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_04.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_05.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_06.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_07.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_08.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_09.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_010.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_011.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_011A.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_011B.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_012.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_013.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_014.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_015.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_016.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_018.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_019.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_024.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_032.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_033.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_034.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_035.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_036.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_037.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_038.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_041.jpg", "", ""), new Image("../images/streetlevel/WWII_Korea_043.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_048.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_049.jpg", "", ""),new Image("../images/streetlevel/WWII_Korea_063.jpg", "", "")];
-        let index = 0;
-    </script>
+
     <title>Street-Level Seoul -- Landscapes, People, and City Images</title>
 </head>
 <body>
@@ -31,10 +28,46 @@
     </button>
     <div id="zoom" class="img-zoom"></div>
 </div>
-<div id="number">
+<div id="number"></div>
 
-</div>
 
+<script type="text/javascript">
+        let images = [new Image("../images/streetlevel/WWII_Korea_01.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_02.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_05.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_016.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_06.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_07.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_04.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_03.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_011.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_08.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_09.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_010.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_011A.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_011B.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_015.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_012.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_018.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_019.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_032.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_034.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_035.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_036.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_041.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_048.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_049.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_038.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_063.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_043.jpg", "", ""),
+                        new Image("../images/streetlevel/WWII_Korea_033.jpg", "", ""),
+
+
+                        ];
+        let index = 0;
+        let firstImage = document.getElementById("photo");
+        firstImage.src = images[0].getUrl();
+</script>
 
 <footer id="footer">
 

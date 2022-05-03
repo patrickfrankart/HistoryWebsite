@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <script  type="text/javascript" src="index.js"></script>
 
-    <script type="text/javascript">
-        let images = [new Image("../images/legacies/WWII_Korea_017.jpg", "", ""), new Image("../images/legacies/WWII_Korea_021.jpg", "", ""), new Image("../images/legacies/WWII_Korea_044.jpg", "", ""),new Image("../images/legacies/WWII_Korea_045.jpg", "", ""),new Image("../images/legacies/WWII_Korea_065.jpg", "", ""),new Image("../images/legacies/WWII_Korea_066.jpg", "", ""),];
-        let index = 0;
-    </script>
+
     <title>After the Japanese Occupation of Korea-- Legacies and Visible Traces</title>
 </head>
 <body>
@@ -31,10 +28,21 @@
     </button>
     <div id="zoom" class="img-zoom"></div>
 </div>
-<div id="number">
+<div id="number"></div>
 
-</div>
 
+
+<script type="text/javascript">
+        let images = [new Image("../images/legacies/WWII_Korea_017.jpg", "", ""),
+                        new Image("../images/legacies/WWII_Korea_021.jpg", "", ""),
+                        new Image("../images/legacies/WWII_Korea_065.jpg", "", ""),
+                        new Image("../images/legacies/WWII_Korea_066.jpg", "", ""),
+                        new Image("../images/legacies/WWII_Korea_045.jpg", "", ""),
+                        new Image("../images/legacies/WWII_Korea_044.jpg", "", ""),];
+        let index = 0;
+        let firstImage = document.getElementById("photo");
+        firstImage.src = images[0].getUrl();
+    </script>
 <footer id="footer">
 
 </footer>
